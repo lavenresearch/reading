@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello Papers!
-tagline: github.com/lavenresearch
+tagline: Research Reading Notes
 ---
 {% include JB/setup %}
 
