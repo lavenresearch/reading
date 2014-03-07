@@ -3,11 +3,17 @@ import time
 
 # basic information start
 
-name = "#NOTE# GridGain CTO Nikita Ivanov's blog from 20130906 to 20140206"
+name = "Spark Cluster Computing with Working Sets"
 category = "memory"
-tags = "in-memory","cache","big data","hadoop"
+tags = "interactive","iterative","spark"
+types = 0 # 0 for NOTE@, 1 for CONCLUSION@
 
 # end
+
+if types == 0:
+    name = "NOTE@ " + name
+else:
+    name = "CONCLUSION@ " + name
 
 content = '''---
 layout: post

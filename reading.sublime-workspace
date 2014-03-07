@@ -136,10 +136,10 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/gen_post.py",
+			"file": "_posts/gen_blank_post.py",
 			"settings":
 			{
-				"buffer_size": 1338,
+				"buffer_size": 846,
 				"line_ending": "Windows"
 			}
 		}
@@ -525,7 +525,9 @@
 	"file_history":
 	[
 		"/D/project/github/reading/_config.yml",
+		"/D/project/github/reading/_posts/2014-01-06-NOTE@-The-Case-For-RAMCloud.md",
 		"/D/project/github/reading/index.md",
+		"/D/project/github/reading/_posts/gen_post.py",
 		"/D/project/github/reading/tags.html",
 		"/D/project/github/lavenresearch.github.io/_config.yml",
 		"/D/project/github/reading/README.md",
@@ -649,9 +651,7 @@
 		"/D/project/工作交接_华为pnfs/work_zwh/热点迁移/毕业设计版/大机房代码/gdesign/istall.sh",
 		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/to_read_paper_list/DVM Towards a Datacenter-Scale Virtual Machine/kmeans/DISA/kmeans-p12_8m-k1000-r64.disa",
 		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/research/storage_virtualization_in_datacenter.tex",
-		"/H/book/docs/西安-吃.txt",
-		"/H/book/docs/强烈推荐的　　",
-		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/to_read_paper_list/DVM Towards a Datacenter-Scale Virtual Machine/kmeans/x10/KMeansSPMD.x10"
+		"/H/book/docs/西安-吃.txt"
 	],
 	"find":
 	{
@@ -829,18 +829,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/gen_post.py",
+					"file": "_posts/gen_blank_post.py",
 					"settings":
 					{
-						"buffer_size": 1338,
+						"buffer_size": 846,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								448,
-								448
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1053,12 +1053,24 @@
 		"selected_items":
 		[
 			[
-				"ta",
-				"tags.html"
+				"not",
+				"_posts/2014-01-06-NOTE@-The-Case-For-RAMCloud.md"
+			],
+			[
+				"confi",
+				"_config.yml"
 			],
 			[
 				"in",
 				"index.md"
+			],
+			[
+				"genb",
+				"_posts/gen_blank_post.py"
+			],
+			[
+				"ta",
+				"tags.html"
 			],
 			[
 				"con",
