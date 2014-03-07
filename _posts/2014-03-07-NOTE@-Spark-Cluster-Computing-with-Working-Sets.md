@@ -6,7 +6,7 @@ tags : [interactive,iterative,spark]
 ---
 {% include JB/setup %}
 
-## Spark[^spark]
+## Mind Map of Spark[^spark]
 
 ![](/reading/images/20140307spark.png)
 
