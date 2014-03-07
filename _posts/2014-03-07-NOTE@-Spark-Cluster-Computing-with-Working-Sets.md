@@ -8,4 +8,4 @@ tags : [interactive,iterative,spark]
 
 ## Spark
 
-![](/images/20140307spark.png)
+![](/reading/images/20140307spark.png)
