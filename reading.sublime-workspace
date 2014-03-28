@@ -142,20 +142,12 @@
 				"buffer_size": 940,
 				"line_ending": "Windows"
 			}
-		},
-		{
-			"file": "_posts/2014-03-07-NOTE@-Spark-Cluster-Computing-with-Working-Sets.md",
-			"settings":
-			{
-				"buffer_size": 153,
-				"line_ending": "Windows"
-			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 60.0,
+		"height": 375.0,
 		"selected_items":
 		[
 			[
@@ -532,6 +524,7 @@
 	},
 	"file_history":
 	[
+		"/D/project/github/reading/_posts/2014-03-07-NOTE@-Spark-Cluster-Computing-with-Working-Sets.md",
 		"/D/project/github/reading/_posts/2014-03-07-Spark-Cluster-Computing-with-Working-Sets.md",
 		"/D/project/github/reading/reading.sublime-project",
 		"/D/project/github/reading/_config.yml",
@@ -658,8 +651,7 @@
 		"/D/project/706项目/测试结果/mem_and_same_size/4Mf.log",
 		"/D/project/706项目/测试结果/mem_and_same_size/8M.log",
 		"/D/project/706项目/测试结果/mem_and_same_size/16M.log",
-		"/D/project/工作交接_华为pnfs/work_zwh/热点迁移/毕业设计版/大机房代码/gdesign/istall.sh",
-		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/to_read_paper_list/DVM Towards a Datacenter-Scale Virtual Machine/kmeans/DISA/kmeans-p12_8m-k1000-r64.disa"
+		"/D/project/工作交接_华为pnfs/work_zwh/热点迁移/毕业设计版/大机房代码/gdesign/istall.sh"
 	],
 	"find":
 	{
@@ -832,7 +824,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -847,8 +839,8 @@
 						"selection":
 						[
 							[
-								358,
-								358
+								273,
+								273
 							]
 						],
 						"settings":
@@ -1093,167 +1085,6 @@
 							"syntax": "Packages/Python/Python.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2014-03-07-NOTE@-Spark-Cluster-Computing-with-Working-Sets.md",
-					"settings":
-					{
-						"buffer_size": 153,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								120
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"parser": "Github Flavored Markdown",
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage",
-							"target": "browser"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1558,16 +1389,16 @@
 		"selected_items":
 		[
 			[
+				"d",
+				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
+			],
+			[
 				"l",
 				"/D/project/github/lavenderwords.github.io/lavenblog.sublime-project"
 			],
 			[
 				"res",
 				"/D/project/github/lavenresearch.github.io/research.sublime-project"
-			],
-			[
-				"d",
-				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
 			],
 			[
 				"",

@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "Spark Cluster Computing with Working Sets"
-category = "memory"
-tags = "interactive","iterative","spark"
+name = "An Overview of Data Warehousing and OLAP Technology"
+category = "OLAP"
+tags = "data warehouse","OLAP"
 types = 0 # 0 for NOTE@, 1 for CONCLUSION@
 
 # end
