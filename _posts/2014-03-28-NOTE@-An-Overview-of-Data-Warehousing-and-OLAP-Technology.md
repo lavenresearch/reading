@@ -59,5 +59,5 @@ tags : [data warehouse,OLAP]
 3. operational metadata
     * Operational metadata includes information that is collected during the operation of the warehouse: the lineage of migrated and transformed data; the currency of data in the warehouse (active, archived or purged); and monitoring information such as usage statistics, error reports, and audit trails.
 
-[^1] S. Chaudhuri and U. Dayal, “An overview of data warehousing and OLAP technology,” Sigmod Record, vol. 26, no. 1, pp. 65–74, 1997.
+[^1]: S. Chaudhuri and U. Dayal, “An overview of data warehousing and OLAP technology,” Sigmod Record, vol. 26, no. 1, pp. 65–74, 1997.
 
