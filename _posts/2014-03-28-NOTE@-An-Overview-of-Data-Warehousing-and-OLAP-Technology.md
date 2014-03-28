@@ -7,6 +7,11 @@ tags : [data warehouse,OLAP]
 {% include JB/setup %}
 
 20140328-An Overview of Data Warehousing and OLAP Technology[^1]
+# 融合
+1. 衍生数据的更新问题
+2. 数据存储格式不同
+3. 数据范围不同
+
 # OLAP 的特殊需求（相对于OLTP）
 1. OLAP 要求多个 OLTP 数据库及其历史数据的融合
     * 数据异构

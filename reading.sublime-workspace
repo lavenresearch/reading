@@ -139,7 +139,7 @@
 			"file": "_posts/gen_blank_post.py",
 			"settings":
 			{
-				"buffer_size": 940,
+				"buffer_size": 938,
 				"line_ending": "Windows"
 			}
 		}
@@ -524,6 +524,7 @@
 	},
 	"file_history":
 	[
+		"/D/project/github/reading/_posts/2014-03-28-NOTE@-An-Overview-of-Data-Warehousing-and-OLAP-Technology.md",
 		"/D/project/github/reading/_posts/2014-03-07-NOTE@-Spark-Cluster-Computing-with-Working-Sets.md",
 		"/D/project/github/reading/_posts/2014-03-07-Spark-Cluster-Computing-with-Working-Sets.md",
 		"/D/project/github/reading/reading.sublime-project",
@@ -650,8 +651,7 @@
 		"/C/Users/lav/Desktop/EtsxS0WRh0.torrent",
 		"/D/project/706项目/测试结果/mem_and_same_size/4Mf.log",
 		"/D/project/706项目/测试结果/mem_and_same_size/8M.log",
-		"/D/project/706项目/测试结果/mem_and_same_size/16M.log",
-		"/D/project/工作交接_华为pnfs/work_zwh/热点迁移/毕业设计版/大机房代码/gdesign/istall.sh"
+		"/D/project/706项目/测试结果/mem_and_same_size/16M.log"
 	],
 	"find":
 	{
@@ -832,15 +832,15 @@
 					"file": "_posts/gen_blank_post.py",
 					"settings":
 					{
-						"buffer_size": 940,
+						"buffer_size": 938,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								273,
-								273
+								355,
+								355
 							]
 						],
 						"settings":
@@ -1156,6 +1156,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"over",
+				"_posts/2014-03-28-NOTE@-An-Overview-of-Data-Warehousing-and-OLAP-Technology.md"
+			],
 			[
 				"notespark",
 				"_posts/2014-03-07-NOTE@-Spark-Cluster-Computing-with-Working-Sets.md"
