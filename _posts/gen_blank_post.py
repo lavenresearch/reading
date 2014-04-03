@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "An Overview of Data Warehousing and OLAP Technology"
+name = "A Common Database Approach for OLTP and OLAP Using an In-memory Column Database"
 category = "OLAP"
-tags = "data warehouse","OLAP"
+tags = "In-memory","OLAP","OLTP","Column Database"
 types = 0 # 0 for NOTE@, 1 for CONCLUSION@
 
 # end
