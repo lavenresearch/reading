@@ -8,10 +8,10 @@ tags : [storm,survey,millwheel,s4,spark streaming,Fault Tolerance]
 
 # 基本知识
 
-- 流计算中会遇到的两种错误
+- 流计算中会遇到的两种错误[^2]
     + 缓存溢出
     + 节点失效
-- 错误类型
+- 错误类型[^1]
     + Byzantine faults : 在运行，但是输出有错误，难以检测。
     + fail-stop faults : 不能运行，容易检测。
     + fail-stutter faults : 在运行，但是性能很差，就是stragglers。难以检测。
@@ -49,3 +49,8 @@ tags : [storm,survey,millwheel,s4,spark streaming,Fault Tolerance]
     - 使用zookeeper协调nimbus和worker。
     - 在spout备份输出的tuples，直到接收到bolts的ACK。
     - Nimbus和Supervisor是无状态的。
+
+
+[^1]: M. Treaster, “A Survey of Fault-Tolerance and Fault-Recovery Techniques in Parallel Systems,” arXiv:cs/0501002, Dec. 2004.
+[^2]: W. Hummer, C. Inzinger, P. Leitner, B. Satzger, and S. Dustdar, “Deriving a Unified Fault Taxonomy for Event-based Systems,” in Proceedings of the 6th ACM International Conference on Distributed Event-Based Systems, New York, NY, USA, 2012, pp. 167–178.
+
