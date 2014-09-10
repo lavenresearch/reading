@@ -3,10 +3,10 @@ import time
 
 # basic information start
 
-name = "A Common Database Approach for OLTP and OLAP Using an In-memory Column Database"
-category = "OLAP"
-tags = "In-memory","OLAP","OLTP","Column Database"
-types = 0 # 0 for NOTE@, 1 for CONCLUSION@
+name = "Comparing Distributed Online Stream Processing Systems Considering Fault Tolerance Issues"
+category = "Stream Processing"
+tags = "storm","survey","millwheel","s4","spark streaming","Fault Tolerance"
+types = 1 # 0 for NOTE@, 1 for CONCLUSION@
 
 # end
 

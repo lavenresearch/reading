@@ -15,6 +15,7 @@ tags : [In-memory,OLAP,OLTP,Column Database]
 4. snapshot isolation via timestamps[15]
 5. minimal projection
 6. horizontal and vertical partition
+    * [DGS+90] Dewitt, D. J., Ghandeharizadeh, S., Schneider, D. A.,  Bricker, A., Hsiao, H., and Rasmussen, R. “The Gamma Database  Machine Project.” IEEE Transactions on Knowledge and Data  Engineering 2(1):44-62, March 1990. 
 7. compression for column store( by dictionaries )
 
 # 想法

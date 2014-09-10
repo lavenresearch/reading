@@ -139,15 +139,7 @@
 			"file": "_posts/gen_blank_post.py",
 			"settings":
 			{
-				"buffer_size": 962,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_posts/2014-03-31-NOTE@-OLAP-Solutions-Building-Multidimensional-Information-Systems-Second-Edition.md",
-			"settings":
-			{
-				"buffer_size": 1538,
+				"buffer_size": 986,
 				"line_ending": "Windows"
 			}
 		}
@@ -532,11 +524,13 @@
 	},
 	"file_history":
 	[
+		"/D/project/github/reading/_posts/2014-04-03-NOTE@-A-Common-Database-Approach-for-OLTP-and-OLAP-Using-an-In-memory-Column-Database.md",
+		"/D/project/github/reading/_config.yml",
+		"/D/project/github/reading/_posts/2014-03-31-NOTE@-OLAP-Solutions-Building-Multidimensional-Information-Systems-Second-Edition.md",
 		"/D/project/github/reading/_posts/2014-03-28-NOTE@-An-Overview-of-Data-Warehousing-and-OLAP-Technology.md",
 		"/D/project/github/reading/_posts/2014-03-07-NOTE@-Spark-Cluster-Computing-with-Working-Sets.md",
 		"/D/project/github/reading/_posts/2014-03-07-Spark-Cluster-Computing-with-Working-Sets.md",
 		"/D/project/github/reading/reading.sublime-project",
-		"/D/project/github/reading/_config.yml",
 		"/D/project/github/reading/_posts/2014-01-06-NOTE@-The-Case-For-RAMCloud.md",
 		"/D/project/github/reading/index.md",
 		"/D/project/github/reading/_posts/gen_post.py",
@@ -657,9 +651,7 @@
 		"/C/Users/lav/Desktop/orgmode.html",
 		"/C/Users/lav/Desktop/orgmode",
 		"/C/Users/lav/Desktop/EtsxS0WRh0.torrent",
-		"/D/project/706项目/测试结果/mem_and_same_size/4Mf.log",
-		"/D/project/706项目/测试结果/mem_and_same_size/8M.log",
-		"/D/project/706项目/测试结果/mem_and_same_size/16M.log"
+		"/D/project/706项目/测试结果/mem_and_same_size/4Mf.log"
 	],
 	"find":
 	{
@@ -678,6 +670,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"ku",
+			"interpretor",
+			"mar",
+			"mark",
+			"markdown",
+			"blank",
+			"这篇论文的最终目标是：",
+			"■■",
 			"\n ",
 			"CONCLUSION",
 			"@\n",
@@ -797,18 +797,10 @@
 			"survivedtext",
 			"(%",
 			"1000",
-			"(/",
-			"((",
-			"(+\":\"+",
-			"60000",
-			"Draw",
-			"draw\ndraw",
-			"time",
-			"50",
-			"show_location_content"
+			"(/"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
@@ -832,7 +824,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -840,15 +832,15 @@
 					"file": "_posts/gen_blank_post.py",
 					"settings":
 					{
-						"buffer_size": 962,
+						"buffer_size": 986,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								279,
-								279
+								106,
+								112
 							]
 						],
 						"settings":
@@ -1099,165 +1091,6 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2014-03-31-NOTE@-OLAP-Solutions-Building-Multidimensional-Information-Systems-Second-Edition.md",
-					"settings":
-					{
-						"buffer_size": 1538,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1537,
-								1537
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110.0
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2.0,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 327.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		}
@@ -1323,6 +1156,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"common",
+				"_posts/2014-04-03-NOTE@-A-Common-Database-Approach-for-OLTP-and-OLAP-Using-an-In-memory-Column-Database.md"
+			],
+			[
+				"config.",
+				"_config.yml"
+			],
+			[
+				"acom",
+				"_posts/2014-04-03-NOTE@-A-Common-Database-Approach-for-OLTP-and-OLAP-Using-an-In-memory-Column-Database.md"
+			],
 			[
 				"olapso",
 				"_posts/2014-03-31-NOTE@-OLAP-Solutions-Building-Multidimensional-Information-Systems-Second-Edition.md"
@@ -1564,6 +1409,10 @@
 		"selected_items":
 		[
 			[
+				"",
+				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/notes/notes.sublime-project"
+			],
+			[
 				"d",
 				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
 			],
@@ -1573,10 +1422,6 @@
 			],
 			[
 				"res",
-				"/D/project/github/lavenresearch.github.io/research.sublime-project"
-			],
-			[
-				"",
 				"/D/project/github/lavenresearch.github.io/research.sublime-project"
 			],
 			[
