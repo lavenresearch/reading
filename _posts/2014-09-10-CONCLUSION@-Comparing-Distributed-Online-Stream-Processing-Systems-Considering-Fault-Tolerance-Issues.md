@@ -50,6 +50,7 @@ tags : [storm,survey,millwheel,s4,spark streaming,Fault Tolerance]
     - 在spout备份输出的tuples，直到接收到bolts的ACK。
     - Nimbus和Supervisor是无状态的。
 
+---
 
 [^1]: M. Treaster, “A Survey of Fault-Tolerance and Fault-Recovery Techniques in Parallel Systems,” arXiv:cs/0501002, Dec. 2004.
 [^2]: W. Hummer, C. Inzinger, P. Leitner, B. Satzger, and S. Dustdar, “Deriving a Unified Fault Taxonomy for Event-based Systems,” in Proceedings of the 6th ACM International Conference on Distributed Event-Based Systems, New York, NY, USA, 2012, pp. 167–178.
