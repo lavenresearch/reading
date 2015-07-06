@@ -4,7 +4,6 @@ category : Memory
 tagline: "July 2011 Communication Of The ACM"
 tags : [RAMCloud]
 ---
-{% include JB/setup %}
 
 ## RAMCloud产生的背景
 1. 磁盘容量增长速度远大于磁盘性能增长速度。
