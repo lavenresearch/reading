@@ -78,6 +78,7 @@ For small tables it is most efficient to store the entire table plus any related
 在RAMCloud中会同时存在多个使用者，因此需要能够合理使用各个租户的剩余资源，还包括实现访问控制，安全机制及性能隔离。
 
 ### 数据模型（data model）
+
 | Data Model type       | Features                                           |
 |-----------------------|----------------------------------------------------|
 | Relational Data Model | 1. convenient programming interface                |
