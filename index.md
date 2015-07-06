@@ -13,11 +13,11 @@ tagline: Research Reading Notes
   &raquo;&raquo;&raquo;&raquo;<span class="post-date">{{ post.date | date_to_string }}</span>&raquo;&raquo;&raquo;&raquo;
 
   <div class="post">
-    <h6 class="post-title">
+    <h4 class="post-title">
       <a href="{{ BASE_PATH }}{{ post.url }}">
         {{ post.title }}
       </a>
-    </h6>
+    </h4>
 
   </div>
   {% endfor %}
