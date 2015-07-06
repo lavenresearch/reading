@@ -10,6 +10,24 @@ layout: hdefault
   {{ content }}
 </div>
 
+<div>
+  {% unless page.categories == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      {% assign categories_list = page.categories %}
+      {% include JB/categories_list %}
+    </ul>
+  {% endunless %}
+
+  {% unless page.tags == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+    </ul>
+  {% endunless %}
+</div>
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
