@@ -3,24 +3,52 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
-relative_permalinks: true
+permalink:        /:categories/:year/:month/:day/:title
+# relative_permalinks: true
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+pygments: true
+production_url : http://lavenresearch.github.io/reading/
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title : Hello Papers!
+tagline: Reading NOTES
+author :
+  name : Yi Su
+  email : suyi@hust.edu.cn
+  github : lavenresearch
+  twitter : none
+  feedburner : feedname
+description:      Reading Papers
+url:              http://lavenresearch.github.io/reading/
 baseurl:          http://lavenresearch.github.io/reading/
-
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
 
 paginate:         5
 
-# Custom vars
-version:          2.1.0
-
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/lavenresearch
+
+  comments :
+    provider : disqus
+    disqus :
+      short_name : hellopapers
+    livefyre :
+      site_id :
+    intensedebate :
+      account :
+    facebook :
+      appid :
+      num_posts:
+      width:
+      colorscheme:
+
+  analytics :
+    provider : google
+    google :
+        tracking_id : 'UA-47162346-1'
+    getclicky :
+      site_id :
+    mixpanel :
+        token : '_MIXPANEL_TOKEN_'
+    piwik :
+        baseURL : 'myserver.tld/piwik' # Piwik installation address (without protocol)
+        idsite : '1'                   # the id of the site on Piwik
