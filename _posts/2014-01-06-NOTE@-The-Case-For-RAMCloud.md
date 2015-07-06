@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : Memory
 tagline: "July 2011 Communication Of The ACM"
 tags : [RAMCloud]
