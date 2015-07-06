@@ -32,9 +32,9 @@ _The combination of latency and scale offered by RAMCloud will change the storag
 
 ### latency的重要性
 
-when Facebook receives an HTTP request for a Web page, the application server makes an average of 130 internal requests for data (inside the Facebook site) as part of generating the HTML for the page, 15 and the requests must typically be issued sequentially.
+> when Facebook receives an HTTP request for a Web page, the application server makes an average of 130 internal requests for data (inside the Facebook site) as part of generating the HTML for the page, 15 and the requests must typically be issued sequentially.
 
-Amazon has reported similar results, with 100–200 internal requests to generate HTML for each page.
+> Amazon has reported similar results, with 100–200 internal requests to generate HTML for each page.
 
 这些intern request的响应时延是用户响应时延中一个重要的部分。These limitations rule out entire classes of algorithms (such as those traversing large graphs).
 
@@ -44,7 +44,7 @@ Amazon has reported similar results, with 100–200 internal requests to generat
 
 NOSQL是为了解决关系型数据库的扩展性问题而出现的，但是，NOSQL不具备关系型数据库的通用性，而且其性能也受到硬盘性能的限制。
 
-One motivation for RAMCloud is to provide a general-purpose storage system that scales far beyond existing systems, so application developers need not resort to specialized approaches (such as NoSQL systems).
+> One motivation for RAMCloud is to provide a general-purpose storage system that scales far beyond existing systems, so application developers need not resort to specialized approaches (such as NoSQL systems).
 
 ### cache的不足
 
@@ -53,7 +53,7 @@ One motivation for RAMCloud is to provide a general-purpose storage system that 
 
 ### 不使用flash的原因
 
-DRAM-based implementation offers higher performance.
+> DRAM-based implementation offers higher performance.
 
 > For  high  query rates and smaller data set sizes, DRAM is cheapest; for low query rates and large data sets, disk is cheapest; and in the middle ground, flash is cheapest.
 

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : memory
 tagline: "NSDI'12"
 tags : [cache , parallel]
@@ -34,19 +34,19 @@ tags : [cache , parallel]
 > 提出的解决方案是什么（描述），为什么这个解决方案要比原来的好（分析）。
 
 1. 系统实现技巧
-    
+
     1. **松耦合**：PACMan的实现很简单很巧妙，虽然基于hadoop，但是其基本功能和hadoop实现了松耦合，即，其cache策略并没有在hadoop的系统中实现，而是形成了一个独立的软件。这大大降低了这篇论文的成本。使作者能够更加专注于科研问题的解决。
-        
+
         实现方式为在hadoop的每个slave上运行一个pacman的client，修改hadoop使其优先从pacman的client上读取数据。pacman client执行内存的cache管理操作并将cache信息传输给pacman coordinator形成集群的全局cache信息，并提供给替换策略。cache替换决策有替换策略给出。
 
     2. **寻求近似**：在理想状况下的各项参数在实际系统不能够轻易得到，此时应该使用其他容易得到的参数来代替理想情况下需要使用到的参数。从而简化系统的实现。
 
         1. 这本文中，LIFE通过优先cache wave width小的数据来提高jobs的平均完成时间。但是每个job的wave width在实际执行时是不断变化的，因此获得wave width的代价比较高，而有workload分析发现有job size和wave width之间有关联，因此采用job size代替wave width进行计算。
-        
+
         2. 由于pacman是运行在文件系统层上的，无法获得job信息，因此将缓存一个job的完整输入近似为缓存整个文件。即假设一个job只读一个文件。这种假设对于小job是基本成立的。
 
 2. 实际系统中面临的问题
-    
+
     1. 总资源量不固定
 
         由于集群是在多应用间复用的，因此在其它应用的负载较轻时，会给数据处理分配更多的系统资源。因此虽然集群中的节点数量及配置并不会动态变化，但对于某一个应用，其能够拥有的资源总量是会动态变化的。
@@ -56,39 +56,39 @@ tags : [cache , parallel]
 > 如何验证解决方案的效果，分析实验结果得到的结论或者问题。
 
 1. 系统评价角度
-    
+
     1. 总体评价
-        
+
         对pacman分别和LIFE，LFU-F共同作用下整体效果进行测试。**_在进行总体测试的时候对负载进行分类_**，在这里，由于基于不同job size将jobs分装到5个bins里，使得可以清楚的看出pacman对不同job size的job的影响，使分析更透彻。
 
     2. 模块评价
-        
+
         评价系统中各个模块对整体表现的贡献。为了显示sticky policy的重要性，本文分别对比了LIFE和LIFE(NO sticky)，LFU-F和LFU-F(NO sticky)，量化NO sticky对总体性能的影响，证明sticky policy的重要性。
 
     3. 对近似的评价
-        
+
         由于在系统实现中使用了近似参数，因此要测试使用近似参数对系统的最终表现的影响。
 
     4. 和已有方案对比
-        
+
         将pacman+replacement policy(LIFE,LFU-F)同已有cache策略（MIN，LFU，LFU）进行对比。证明新提出的理论是有效的。
 
     5. 对影响系统性能的因素的评估
-        
+
         1. cache size（内存大小对系统性能的影响）
-        
+
         2. scalability（PACMan client的吞吐量，pacman coordinator相应请求的并发数及时延）
 
 2. 实验结果
-    
+
     1. cache主要用于小文件，cache能够发挥作用的基础是，存在power-law distribution（小job占大多数）。
-    
+
     2. LIFE（优先cache wave width小的数据，即小文件）在cluster efficiency上也有着良好的表现。因为cache了小文件后依然还有很大内存空间可以cache大文件。
-    
+
     3. LFU-F（优先cache 访问频率高的文件，根据负载分析知道，为大文件）在average completing time上的表现不好，因为cache了大文件对小文件cache的干扰太大。
 
 3. 实验方法
-    
+
     1. scale down workload trace
 
         scale down workload trace 的目标是使其适合用来做实验的小规模集群，同时保持其在大规模集群上的负载特征，并且是小规模集群上实验结果能够反映在大规模集群上的真实情况。这里做的scale down是减小了input data size并且降低了每个机器用来做cache的内存。
@@ -97,15 +97,15 @@ tags : [cache , parallel]
 > 亮点是什么，是否存在有争议的观点，判断是否具有应用场景并且可实现。
 
 1. 使用cache是否可作为一个长期解决方案？
-    
+
     1. cache作用的对象是小文件，当应用需要的数据量变大时，要使cache机制产生很好的效果需要使cache的容量也变得也来越大。而cache存在的目标（通过少量的资源增加获得极大的性能提升）将变得不现实[^2]。此时cache就失去的存在的意义。
-    
+
     2. 随着系统规模的变得越来越大，系统复杂性也越来越高，在这种条件下，越来越难以让cache发挥作用。本文提出应用方案的只针对一个特定的很应用场景（拥有一个IO intensive[^3]的input phrase的应用[^4]）。是否可以被广泛使用的情况不明。
-    
+
     3. 作者使用cache而不是像ramcloud那样把全部数据都缓存到内存中的原因是：
-        
+
         + JOB SIZE 有 power-law distribution（即小job占绝大多数）。
-        
+
         + FACEBOOK 集群的 disk capacity 是 memory capacity 的 600 倍（潜台词是数据量远远超出内存可容纳的范围）。
 
         首先，pacman系统对大job的性能提升主要来源于小job的数据不足以占满cache，使得内存中仍然有足够的空间供大job的数据进行调度。也就是说如果针对于小job进行优化的话，为何不将小job的所有数据放在内存里保证其性能，而对大job采用别的方式进行性能优化。

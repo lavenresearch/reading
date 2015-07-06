@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : Network
 tagline: ""
 tags : [performance]
@@ -9,7 +9,7 @@ It's Time for Low Latency - HotOS 2011
 
 # OUTLINE
 1. Introduction（ **latency 100μs to 5~10μs to 1μs** ）
-    
+
     目前 network latency 的情况（需要使用特殊的软硬件实现 low latency ，主要用在HPC中，但是，作者认为在一般的数据中心里实现 low latency 是一个几年内可以实现的目标）。
 
     在一个非HPC的数据中心中实现 low latency 需要做出如下改变：
@@ -34,7 +34,7 @@ It's Time for Low Latency - HotOS 2011
     - 为了降低 latency ， client 需要将一个任务中的多个请求并行发出，因此在接收请求数据时造成了 client 处的拥塞。（ **为什么不采用流水线？** ）
 
 4. low latency 是可以做到的
-    
+
     - 在数据中心里，计算与存储设备都是集中放置的，因此可以不用考虑传输时延，在物理上是可以实现 low latency 的。
     - 新的交换机技术
     - 新的网卡技术

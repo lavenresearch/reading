@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : OLAP
 tagline: ""
 tags : [In-memory,OLAP,OLTP,Column Database]
@@ -15,7 +15,7 @@ tags : [In-memory,OLAP,OLTP,Column Database]
 4. snapshot isolation via timestamps[15]
 5. minimal projection
 6. horizontal and vertical partition
-    * [DGS+90] Dewitt, D. J., Ghandeharizadeh, S., Schneider, D. A.,  Bricker, A., Hsiao, H., and Rasmussen, R. “The Gamma Database  Machine Project.” IEEE Transactions on Knowledge and Data  Engineering 2(1):44-62, March 1990. 
+    * [DGS+90] Dewitt, D. J., Ghandeharizadeh, S., Schneider, D. A.,  Bricker, A., Hsiao, H., and Rasmussen, R. “The Gamma Database  Machine Project.” IEEE Transactions on Knowledge and Data  Engineering 2(1):44-62, March 1990.
 7. compression for column store( by dictionaries )
 
 # 想法
@@ -144,11 +144,11 @@ enterprise applications are to a large extent memory bound
 5. 应用可以认为SQL server没有错误，因此免除检查
 
 # column storage in SaaS applications
-In SaaS (Software as a Service) applications several aspects of column storage are helpful. Columns which are unused are only represented by a stub. The introduction of a new attribute to a table means an update of the metadata and the creation of a stub for the column [2]. The attributes can from then on be used by the application. This is an important feature for the ongoing development of the application without any interruption for the user. The join with external data, which after import into the host system is held in column storage, is extremely efficient even for very large tables (minimum main memory accessed). In both cases the greatly improved response time will be appreciated. Not only can the application now determine what base date for a query should be chosen but the development of the content (attributes) of individual tuples can be monitored (e.g. lifecycle of a customer order, control of sensitive data in human resources or accounts payable). 
+In SaaS (Software as a Service) applications several aspects of column storage are helpful. Columns which are unused are only represented by a stub. The introduction of a new attribute to a table means an update of the metadata and the creation of a stub for the column [2]. The attributes can from then on be used by the application. This is an important feature for the ongoing development of the application without any interruption for the user. The join with external data, which after import into the host system is held in column storage, is extremely efficient even for very large tables (minimum main memory accessed). In both cases the greatly improved response time will be appreciated. Not only can the application now determine what base date for a query should be chosen but the development of the content (attributes) of individual tuples can be monitored (e.g. lifecycle of a customer order, control of sensitive data in human resources or accounts payable).
 
 # future research
 1. 根据时间划分数据的标准，将历史数据设置为只读
-2. Vertical Partitioning - In enterprise applications several chunks of a single relation tend to be grouped together by their access patterns. Using a vertical partitioning approach allows performance improvements when reading the content of those groups. 
+2. Vertical Partitioning - In enterprise applications several chunks of a single relation tend to be grouped together by their access patterns. Using a vertical partitioning approach allows performance improvements when reading the content of those groups.
 
 
 [^1]: H. Plattner, “A Common Database Approach for OLTP and OLAP Using an In-memory Column Database,” in Proceedings of the 2009 ACM SIGMOD International Conference on Management of Data, New York, NY, USA, 2009, pp. 1–2.

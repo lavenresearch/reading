@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : memory
 tagline: ""
 tags : [in-memory,cache,big data,hadoop]
@@ -13,13 +13,13 @@ GridGain5.2 产品结构：
 ![](/images/gg_stack_670.png)
 
 ## Cache < Data Grid < Database
-1. in memory distributed cache 
+1. in memory distributed cache
     1. improve data availability
     2. fundamental data management capabilities
-2. in memory data grid 
+2. in memory data grid
     1. above all
     2. basic capabilities to move the computations to the data
-3. in memory data base 
+3. in memory data base
     1. above all
     2. distributed MPP processing based on standard SQL and/or MapReduce
 
@@ -32,7 +32,7 @@ In-memory database 与 In-memory cache 的不同在于增加了计算管理，�
 
 1. 内存计算将用于比RDBMS更广泛的领域，因此纯SQL是不够的。
     * in high performance computations:
-        - use case: anything from traditional MonteCarlo simulations, video and audio processing, to NLP and image processing software. 
+        - use case: anything from traditional MonteCarlo simulations, video and audio processing, to NLP and image processing software.
         - MPI, MapReduce or MPP are needed for use cases above.
     * in streaming and CEP(Complex Event Processing)
         - use case: ingest hundreds of thousands of events per seconds and process them in real time
@@ -67,7 +67,7 @@ In-Memory Hadoop Accelerator 的目标：最小的迁移代价，使 mapreduce �
 ### Memory-First Principle
 RAM is different from block-level devices like HDD or SSD.
 * it completely eliminates the traditional overhead of block-level devices including marshaling, paging, buffering, memory-mapping, possible networking, OS I/O, and I/O controller.
-* to read a record from block level devices: Your code will have to deal with OS I/O, buffered read, I/O controller, seek time of the device, and de-marshaling back the byte stream that you get from it to an object representation that you actually need. 
+* to read a record from block level devices: Your code will have to deal with OS I/O, buffered read, I/O controller, seek time of the device, and de-marshaling back the byte stream that you get from it to an object representation that you actually need.
 
 ### Four Myths
 1. 太贵

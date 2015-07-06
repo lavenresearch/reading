@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : Stream Processing
 tagline: ""
 tags : [storm,survey,millwheel,s4,spark streaming,Fault Tolerance]

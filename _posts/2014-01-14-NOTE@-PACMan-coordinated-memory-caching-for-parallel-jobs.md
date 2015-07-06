@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : memory
 tagline: "NSDI'12"
 tags : [cache , parallel]

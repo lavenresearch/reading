@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : memory
 tagline: ""
 tags : [one-size-fit-all , database]
@@ -54,13 +54,13 @@ tags : [one-size-fit-all , database]
 解决方案中两个关键点为使用内存数据库( In-memory database ) 和 Snapshot。
 
 1. HyPer 的特点
-    
+
     + HyPer’s partitioning technique (cf. Section III-D) is primarily used for **intra-node parallelism** and is particularly beneficial for **multi-tenancy** database applications. 节点内并行，适合多用户共同使用
     + The concurrent transactional workload and the BI query processing use **multi core** architectures effectively without concurrency interference. 能够高效利用多核
     + a single server **scale up** system. 目前还存在于单节点上
 
 2. In-memory database
-    
+
     + 可行性分析
         * Business critical transactional database volume has **limited** size.[^limited_size] 即，数据全部放入一个机器的内存
         * the main memory capacity of commodity as well as high-end servers is growing faster than the largest business customer’s requirements. 因此将来也可以将数据全部放入内存
@@ -71,7 +71,7 @@ tags : [one-size-fit-all , database]
         * 可以采用 page-shadowing 技术，因为 memory 的访问性能不受 data location 的影响，而对于 disk ， 顺序访问和随机访问区别很大。
 
 3. Snapshot
-    
+
     + OLAP 的 BI queries 在 OLTP transactional data 的 snapshot 上执行，因此不会影响到 OLTP 的性能
     + Snapshot 各种性质（ same , arbitrarily current , consistent ）的保证由硬件辅助完成（ Virtual memory management[^vmm] ）
 
@@ -92,7 +92,7 @@ tags : [one-size-fit-all , database]
 
 1. HyPer is a new **RISC-style** database systems like RDF-3X (albeit for a very different purpose). 什么是 RISC-style 数据库系统？
 
-2. In HyPer we rely on hardware-supported **page shadowing** that is controlled by the processor’s memory management unit (MMU). For disk based database systems shadowing was not really successful because it destroys the **page clustering**. This hurts the **scan performance**, e.g., for a full table scan, as the disk’s read/write head has to be moved. HyPer is based on virtual memory supported shadow paging where scan performance is not hurt by shadowing. 这些到底是什么，及这些东西之间的相互影响是什么？ 
+2. In HyPer we rely on hardware-supported **page shadowing** that is controlled by the processor’s memory management unit (MMU). For disk based database systems shadowing was not really successful because it destroys the **page clustering**. This hurts the **scan performance**, e.g., for a full table scan, as the disk’s read/write head has to be moved. HyPer is based on virtual memory supported shadow paging where scan performance is not hurt by shadowing. 这些到底是什么，及这些东西之间的相互影响是什么？
 
 
 
@@ -105,10 +105,10 @@ tags : [one-size-fit-all , database]
  [^olap_system]: MonetDB , TREX 等。
 
  [^limited_size]: 根据文章中的估算， amazon 的交易数据库一年只产生 54GB ，而目前有 TB 级内存的机器。另外， RAMCloud 中也提出数据可以全部放在内存中。
- 
+
  [^lockless]: 数据库系统使用内存进行数据存储，可以使 transaction 在很短的时间内处理完成，避免了 disk IO ，因此不需要多个 transactions 之间的 CPU 复用以提高资源利用率。从而是 lock-less 可实现。
 
  [^lock_overhead]: 在论文 H-Store 中有详细分析。
- 
+
 
  [^vmm]: address translation, caching, copy on update.

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : OLAP
 tagline: ""
 tags : [data warehouse,OLAP]
