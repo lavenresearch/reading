@@ -3,7 +3,7 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        /:categories/:year/:month/:day/:title
+permalink:        /reading/:categories/:year/:month/:day/:title
 # relative_permalinks: true
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
