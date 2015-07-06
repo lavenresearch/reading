@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: hpage
 title: Hello Papers!
 tagline: Research Reading Notes
 ---
