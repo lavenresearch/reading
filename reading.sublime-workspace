@@ -139,7 +139,7 @@
 			"file": "_layouts/hdefault.html",
 			"settings":
 			{
-				"buffer_size": 935,
+				"buffer_size": 657,
 				"line_ending": "Unix"
 			}
 		}
@@ -848,15 +848,15 @@
 					"file": "_layouts/hdefault.html",
 					"settings":
 					{
-						"buffer_size": 935,
+						"buffer_size": 657,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								98,
-								98
+								99,
+								99
 							]
 						],
 						"settings":
@@ -1098,7 +1098,9 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1430,6 +1432,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"a",
+				"/D/project/706项目/已有系统及文档/自动扩容/src/autoscale.sublime-project"
+			],
 			[
 				"",
 				"/D/project/706项目/已有系统及文档/自动扩容/src/autoscale.sublime-project"
